@@ -1,0 +1,48 @@
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+h1{
+    font-weight: normal;
+    text-align: center;
+}
+.form{
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    max-width: 800px;
+}
+form{
+    width: 100%;
+}
+input {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+li{
+
+    margin-bottom: 10px;
+}
+ul{
+ list-style-type: disc;
+ margin-left: 20px;
+}
+input.valid{
+    background-color: green;
+}
+input.invalid{
+    background-color: red;
+}

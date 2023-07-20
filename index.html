@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="form">
+    <h2>New User Registration</h2>
+    <form id="RegistrationValidation">
+    <div class="form-group">
+    <input type="text" name="username" placeholder="username">
+    <ul>
+        <li>It should be at least 5 characters long and up to a maximum of 9 characters.</li>
+        <li>The Username cannot contain any special characters except underscore .</li>
+        <li>The Username can contain digits</li>
+    </ul>
+</div>
+<div class="form-group">
+    <input type="password" name="password" placeholder="password">
+    <ul>
+        <li>It should be at least 6 characters long and up to a maximum of 15 characters</li>
+        <li>One letter has to be uppercase</li>
+        <li>It has to contain 5 digits</li>
+        <li>It may contain special characters</li>
+    </ul>
+</div>
+<div class="form-group">
+    <input type="email" name="email" placeholder="email">
+    <ul>
+        <li>It must be a valid email, e.g. myemail@gmail.com</li>
+    </ul>
+</div>
+    </form>
+</div>
+</body>
+</html>
