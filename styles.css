@@ -1,3 +1,4 @@
+
 body, h1, h2, p, ul, li, form {
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@ body {
     font-family: Arial, sans-serif;
 }
 .form{
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     align-items: center;
     background-color: gray;
@@ -36,6 +39,7 @@ ul{
 }
 input.valid{
     border-color: green;
+    color: green;
 }
 input.invalid{
     border-color: red;}
@@ -44,6 +48,10 @@ input + ul li{
     margin: 10px;
     color: red;
     opacity: 0;
+}
+input.valid + ul li{
+    color: green;
+    opacity: 1;
 }
 input.invalid + ul li{
     opacity: 1;
