@@ -35,7 +35,8 @@ const inputs = document.querySelectorAll('input');
     const ValidationPatterns = {
         username:/^[A-Za-z0-9]{6,11}$/,
          password:/^(?=(.*[A-Z]){1})\w{5,15}(([0-9]{5}))([!@#$%^&*]+)?$/,
-          email:/^[A-Za-z0-9.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+          email:/^[A-Za-z0-9.+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/,
+          telephone: /^48(?: ?\d{3}){3}$/,
      }
      function validate(field,regex){
         if(regex.test(field.value)){
