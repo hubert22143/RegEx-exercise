@@ -5,21 +5,20 @@ body, h1, h2, p, ul, li, form {
 body {
     font-family: Arial, sans-serif;
 }
-h1{
-    font-weight: normal;
-    text-align: center;
-}
 .form{
+    display: flex;
+    align-items: center;
     background-color: gray;
     margin-left: auto;
     margin-right: auto;
-    padding: 80px;
-    border: 2px solid blue;
     box-sizing: border-box;
     max-width: 800px;
+    justify-content: center;
+
 }
-form{
-    width: 100%;
+.form-group{
+    align-items: center;
+    justify-content: center;
 }
 input {
     box-sizing: border-box;
@@ -27,22 +26,30 @@ input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
-}
-.form-group{
-    margin-bottom: 20px;
 }
 li{
-
+    max-width: 400px;
     margin-bottom: 10px;
 }
 ul{
  list-style-type: disc;
- margin-left: 20px;
 }
 input.valid{
-    background-color: green;
+    border-color: green;
 }
 input.invalid{
-    background-color: red;
+    border-color: red;}
+
+input + ul li{
+    margin: 10px;
+    color: red;
+    opacity: 0;
+}
+input.invalid + ul li{
+    opacity: 1;
+}
+h2{
+    margin:10px;
+    font-weight: normal;
+    text-align: center;
 }
